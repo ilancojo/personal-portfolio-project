@@ -3,6 +3,10 @@
     --space-sm: 1rem;
     --space-lg: 2rem;
     --space-xl: 3rem;
+
+
+    --skill-row-height: 3rem;
+
 }
 
 * {
@@ -17,27 +21,19 @@ body {
     align-items: center;
 }
 h1 {
-    size: 2.5rem;
+     font-size: 2.5rem;
 }
 h2 {
-    size: 2rem;
+     font-size: 2rem;
 }
 h3 {
-    size: 1.5rem;
+     font-size: 1.5rem;
 }
 p {
-    font-size: 1rem line-height 1.6;
+    font-size: 1rem ;
+    line-height :1.6;
 }
-.container{
-    max-width: 1200px;
-    margin: auto; 
-    display: flex;
 
-    justify-content: center;
-    align-items: center;
-    text-align:left;
-    
-}
 
 header{
      display: flex;
@@ -58,7 +54,6 @@ nav{
 
 section{
     background-color: #AAB3BF;
-    padding: 2rem;
     justify-content:center;
     align-items: center;
     text-align: center;
@@ -73,36 +68,30 @@ button {
   font-weight: bold;
 }
 
-.left-div{
-    width: 50%;
-   
-    justify-content: center;
-    align-items: center;
-  
-    padding: 2rem;
-}
 
-.rigth-div{
-     width: 50%;
-   
-     justify-content: center;
-     align-items: center;
-  
-     padding: 2rem;
-}
-
-
-.intrutaction-rigth {
-    width: 50%;
-    min-height: 250px;
-
-    background-color: #AAB3BF;
-
+.container{
+    max-width: 1200px;
+    margin: auto; 
     display: flex;
+
     justify-content: center;
     align-items: center;
+    text-align:left;
+    
+}
+.left-div,
+.rigth-div {
+    flex: 1;
+    padding: 2rem;
+    min-width: 0;
+        text-align: left;
 }
 
+
+img{
+    max-width: 100%;
+    display: block;
+}
 
 #profile-img {
     width: 220px;
@@ -112,22 +101,15 @@ button {
     border: 2px solid #E2E8F0;
 }
 
-img{
-  width: 50%;
-  height: 50%;
- background-color: #FEFEFE;
-}
-
-
-
-
-
-article{
-    background-color: darkorange;
-}
-
-aside{
-    background-color: chartreuse;
+.skills-img{
+    
+    width: 100%;
+    height: calc(var(--skill-row-height) * 4);
+    
+    object-fit: fill;
+    display: block;
+    /*padding-left: clamp(0rem, 5vw, 10rem);*/ 
+    padding-left:10rem;
 }
 
 
