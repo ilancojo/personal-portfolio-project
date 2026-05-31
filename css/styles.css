@@ -111,8 +111,14 @@ img{
     /*padding-left: clamp(0rem, 5vw, 10rem);*/ 
     padding-left:10rem;
 }
-
-
+.img-project{
+    width:231px;
+    height: 125px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+}
 
 main {
     background-color: deeppink;
@@ -128,13 +134,10 @@ footer {
   position: relative;
   
   display: block;
-  width: 100%;
-  padding: 16px;
-  margin: 0 auto;
+  width: 25%;
+  padding: 1rem;
   
   background-color: white;
-  color: #333;
-  font-size: 16px;
   
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
