@@ -1,13 +1,95 @@
-
-header{
-    background-color: gold;
+* {
+    box-sizing: border-box;
 }
+
+:root {
+    --space-sm: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+}
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif ;
+    color: #414B5C;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    size: 2.5rem;
+}
+h2{
+    size: 2rem;
+}
+h3{
+    size: 1.5rem;
+}
+p{
+    font-size: 1rem line-height 1.6;
+}
+.container{
+    max-width: 1200px;
+    margin: auto; 
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+header{
+      
+}
+
 nav{
-    background-color: cornsilk;
+    display: flex;
+    
+    color:#A7B0BD;
+    background-color: #FEFEFE;
+    
+}
+nav > h3{
+    color: #6892EC;
+}
+
+.intrutaction-left{
+
+}
+
+.intrutaction-rigth{
+
+
+}
+
+button {
+  border: 0;
+  background:#2562EE;
+  color:#99B5F1;
+  padding: 14px 28px;
+  border-radius: 7px;
+  font-weight: bold;
 }
 section{
-    background-color: aqua;
+    background-color: #AAB3BF;
+    
+    padding: 4rem 0;
 }
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #E2E8F0;
+  box-shadow:#AAB3BF rgba(219, 176, 176, 0.1)
+
+}
+
+.image-box {
+  width: 40%;
+  background:darkmagenta;
+  display: flex;
+
+}
+
+
 article{
     background-color: darkorange;
 }
@@ -15,6 +97,14 @@ article{
 aside{
     background-color: chartreuse;
 }
+
+.skill-progress{
+    color:#2562EE;
+    background-color: #e8ecf8;
+    border-radius: 999rem;
+}
+
+
 
 main {
     background-color: deeppink;
@@ -52,3 +142,54 @@ img{
 .button-primary { }
 .navbar { }
 .navbar-item { }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile First (col-sm-*) */
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+
+/* Desktop 901px */
+@media screen and (min-width: 600px) {
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+}
